@@ -1,0 +1,56 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+
+/* Components */
+@import url('components/container.css');
+@import url('components/hero.css');
+@import url('components/button.css');
+@import url('components/card.css');
+@import url('components/footer.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  background-color: #FFEBE2;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+#main {
+  margin: 64px auto;
+}
+
+#main h2 {
+  font-weight: 400;
+  letter-spacing: .2rem;
+  opacity: 0;
+  animation: fadein 1.5s ease-in-out forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  #main h2 {
+    text-align: center;
+  }
+}

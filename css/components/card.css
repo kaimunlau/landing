@@ -1,0 +1,100 @@
+.cards-container {
+  display: flex;
+  gap: 64px;
+  margin-top: 32px;
+}
+
+.card {
+  background-color: whitesmoke;
+  width: 30%;
+  padding: 16px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 5px 5px 8px 1px #6165632c;
+}
+
+#card-1 {
+  opacity: 0;
+  animation: 1s fadeinright ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+#card-2 {
+  opacity: 0;
+  animation: 1s fadeinup ease-in-out forwards;
+  animation-delay: 2.3s;
+}
+
+#card-3 {
+  opacity: 0;
+  animation: 1s fadeinleft ease-in-out forwards;
+  animation-delay: 2.6s;
+}
+
+.card img {
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  letter-spacing: .2rem;
+}
+
+.card p {
+  letter-spacing: .1rem;
+  font-weight: 300;
+}
+
+@keyframes fadeinright {
+  0%{
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinup {
+  0%{
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinleft {
+  0%{
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}

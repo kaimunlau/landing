@@ -1,0 +1,42 @@
+.footer {
+  background-color: #D8E2DC;
+  padding: 16px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.footer li {
+  font-size: 2rem;
+}
+
+.footer li a, .footer p {
+  color: #20191B;
+}
+
+.footer li a, .footer p a {
+  transition: .25s ease-in-out;
+}
+
+.footer li a:hover {
+  color: #71575E;
+}
+
+.footer p {
+  font-weight: 300;
+  letter-spacing: .25rem;
+}
+
+.footer p a {
+  font-weight: 400;
+  color: #71575E;
+}
+
+.footer p a:hover {
+  color: #20191B;
+}
